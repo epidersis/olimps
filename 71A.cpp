@@ -17,9 +17,7 @@ int main()
 		
 		if (array[i].length() > 10)
 		{
-			array[i].replace(1, 
-							 array[i].length() - 2, 
-							 to_string(array[i].length() - 2));
+			array[i].replace(1, array[i].length() - 2, to_string(array[i].length() - 2));
 		}
 	}
 	
