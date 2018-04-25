@@ -19,9 +19,7 @@ void lin_sort(short *array, short size)
 			}
 		}
 		
-		short temp = array[i];
-		array[i] = array[max];
-		array[max] = temp;
+		swap(array[i], array[max]);
 	}
 }
 
@@ -40,7 +38,7 @@ int main()
 	
 	lin_sort(array, m);
 	
-	for (int i = 0; i < m - n + 1; i++)
+	for (int i = 0; i < m-n+1; i++)
 	{
 		if (array[i] - array[i+n-1] < difference)
 		{
