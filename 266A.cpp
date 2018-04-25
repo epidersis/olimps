@@ -3,7 +3,7 @@
 int main()
 {
 	
-	char rocks[50];
+	char rocks[51];
 	char last_char;
 	
 	short n;

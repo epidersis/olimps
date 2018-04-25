@@ -4,7 +4,7 @@
 int main()
 {
 	short n, x = 0;
-	char op[3];
+	char op[4];
 	
 	std::cin >> n;
 	

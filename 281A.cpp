@@ -2,7 +2,7 @@
 
 int main()
 {
-	char word[1000];
+	char word[1001];
 	std::cin >> word;
 	
 	if (word[0] >= 97) word[0] -= 32;

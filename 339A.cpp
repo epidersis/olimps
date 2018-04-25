@@ -6,8 +6,8 @@ int main()
 	short ones, twos, threes;
 	ones = twos = threes = 0;
 	
-	char exp[100];
-	char new_exp[100];
+	char exp[101];
+	char new_exp[101];
 	new_exp[0] = '\0';
 	
 	std::cin >> exp;
