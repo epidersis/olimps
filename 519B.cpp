@@ -33,6 +33,5 @@ int main()
 	
 	cout << all_errors - result;
 	
-	
 	return 0;
 }
