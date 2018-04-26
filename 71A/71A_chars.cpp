@@ -9,24 +9,21 @@ int main()
 	int n ;
 	cin >> n;
 	
-	char array[n][101];
+	char string[101];
 	
 	for (int i = 0; i < n; i++)
-	{
-		cin >> array[i];
-	}
-	
-	for (int i = 0; i < n; i++)
-	{		
-		if (strlen(array[i]) > 10)
+	{	
+		cin >> string;
+		
+		if (strlen(string) > 10)
 		{
-			cout << array[i][0];
-			cout << strlen(array[i]) - 2;
-			cout << array[i][strlen(array[i])-1] << endl;
+			cout << string[0];
+			cout << strlen(string) - 2;
+			cout << string[strlen(string)-1] << endl;
 			continue;
 		}
 		
-		cout << array[i] << endl;
+		cout << string << endl;
 	}
 	
 	
