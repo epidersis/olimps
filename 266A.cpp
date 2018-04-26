@@ -1,26 +1,18 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
+	short n, count = 0;
+	cin >> n;
 	
-	char rocks[51];
-	char last_char;
+	char *a = new char[n];
+	cin >> a;
 	
-	short n;
-	short count = 0;
-	
-	std::cin >> n >> rocks;
-	last_char = rocks[0];
-	
-	for (short i = 1; i < n; i++)
+	for (short i = 0; i < n - 1; i++ )
 	{
-		if (rocks[i] == last_char)
-		{
-			count++;
-		} else {
-			last_char = rocks[i];
-		}
+		if ( a[i] == a[i+1] ) count++;		
 	}
 	
-	std::cout << count;
+	cout << count;	
 }
