@@ -19,10 +19,7 @@ int main()
 			side = 1;
 			f += 32;
 		}
-		else
-		{
-			side = -1;
-		}
+		else side = -1;
 		
 		if (f == 'q') weight += 9*side;
 		else if (f == 'r') weight += 5*side;
