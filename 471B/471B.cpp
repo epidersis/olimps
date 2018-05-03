@@ -29,6 +29,7 @@ int main()
             if (d[i].second == d[j].second)
             {
                 indices.push_back(make_pair(i, j));
+                if (indices.size() >= 2) break;
             }
         }
         
