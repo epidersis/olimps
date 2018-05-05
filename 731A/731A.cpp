@@ -13,7 +13,7 @@ int main()
     cin >> s;
     
     for (short i = 0; i < strlen(s); i++)
-    {	
+    {    
         temp = ch;
         
         while(true)

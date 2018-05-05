@@ -9,10 +9,10 @@ int main()
     char *a = new char[n];
     cin >> a;
     
-    for (short i = 0; i < n - 1; i++ )
+    for (short i = 0; i < n - 1; i++)
     {
-        if ( a[i] == a[i+1] ) count++;		
+        if ( a[i] == a[i+1] ) count++;        
     }
     
-    cout << count;	
+    cout << count;    
 }

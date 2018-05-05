@@ -17,7 +17,7 @@ int main()
     }
     
     for (int i = 0; i < n; i++)
-    {		
+    {        
         if (array[i].length() > 10)
         {
             cout << array[i][0];

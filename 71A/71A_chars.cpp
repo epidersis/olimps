@@ -12,7 +12,7 @@ int main()
     char string[101];
     
     for (int i = 0; i < n; i++)
-    {	
+    {    
         cin >> string;
         
         if (strlen(string) > 10)
