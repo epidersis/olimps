@@ -27,18 +27,10 @@ int main()
         return 0;
     }
     
-    for (short i = 0; i < n; i++)
-    {        
-        if (i != k)
-        {
-            cout << rows[i] << endl;;
-        }
-        else
-        {
-            rows[i].replace(p, 2, "++");
-            cout << rows[i] << endl;
-        }
-    }
+    rows[k].replace(p, 2, "++");
+    
+    for (short i = 0; i < n; i++) cout << rows[i] << endl;;
+    
     return 0;
 }
 
