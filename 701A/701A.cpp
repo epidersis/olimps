@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -8,7 +8,7 @@ int main()
     short n;
     cin >> n;
     
-    pair<short, short> *a = new pair<short, short>[n];
+    auto *a = new pair<short, short>[n];
     
     for (short i = 0; i < n; i++)
     {
@@ -16,20 +16,9 @@ int main()
         cin >> a[i].second;
     }
     
-    for (short i = 0; i < n; i++)
-    {
-        short min = i;
-        
-        for (short j = i; j < n; j++)
-        {
-            if (a[j].second < a[min].second)
-            {
-                min = j;
-            }
-        }
-        
-        swap(a[i], a[min]);
-    }
+    sort(a, a+n, [](pair<short, short> f,  pair<short, short> b) {
+    	return f.second < b.second;
+	});
     
     for (short i = 0; i < (n/2); i++)
     {
