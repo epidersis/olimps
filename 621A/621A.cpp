@@ -5,13 +5,14 @@ using namespace std;
 
 int main()
 {
-    int n, min, number;
+	ios::sync_with_stdio(false);
+
+    int n, min = 1000000001, number;
     long long int sum = 0;
     
-    cin >> n >> min;
-    sum += min;
+    cin >> n;
     
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> number;
         sum += number;
