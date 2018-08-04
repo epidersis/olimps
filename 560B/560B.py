@@ -1,8 +1,8 @@
 from itertools import combinations
 
-a1, b1 = sorted(list(map(int, input().split(' '))), reverse=True)
-a2, b2 = sorted(list(map(int, input().split(' '))), reverse=True)
-a3, b3 = sorted(list(map(int, input().split(' '))), reverse=True)
+a1, b1 = sorted(map(int, input().split(' ')), reverse=True)
+a2, b2 = sorted(map(int, input().split(' ')), reverse=True)
+a3, b3 = sorted(map(int, input().split(' ')), reverse=True)
 
 
 arr = [[a2+a3, max(b2, b3)],
